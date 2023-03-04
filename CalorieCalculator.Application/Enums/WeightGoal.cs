@@ -1,4 +1,4 @@
-﻿namespace CalorieCalculator.Application.Models;
+﻿namespace CalorieCalculator.Application.Enums;
 
 public enum WeightGoal
 {
