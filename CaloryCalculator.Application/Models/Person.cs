@@ -3,6 +3,6 @@
     public class Person
     {
         public int Id { get; set; }
-        public IEnumerable<Day> Days { get; set; }
+        public List<Day> Days { get; set; } = new();
     }
 }
