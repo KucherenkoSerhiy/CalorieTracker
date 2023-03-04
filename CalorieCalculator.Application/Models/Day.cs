@@ -1,4 +1,4 @@
-﻿namespace CaloryCalculator.Application.Models
+﻿namespace CalorieCalculator.Application.Models
 {
     public class Day
     {

@@ -1,4 +1,4 @@
-﻿namespace CaloryCalculator.Application.Enums;
+﻿namespace CalorieCalculator.Application.Enums;
 
 public enum ActivityType
 {

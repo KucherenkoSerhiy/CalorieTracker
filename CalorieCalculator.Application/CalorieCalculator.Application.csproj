@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
-        <RootNamespace>CaloryCalculator.Application</RootNamespace>
+        <RootNamespace>CalorieCalculator.Application</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

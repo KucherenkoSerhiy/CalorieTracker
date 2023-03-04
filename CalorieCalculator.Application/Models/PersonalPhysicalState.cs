@@ -1,6 +1,6 @@
-﻿using CaloryCalculator.Application.Enums;
+﻿using CalorieCalculator.Application.Enums;
 
-namespace CaloryCalculator.Application.Models;
+namespace CalorieCalculator.Application.Models;
 
 public class PersonalPhysicalState
 {

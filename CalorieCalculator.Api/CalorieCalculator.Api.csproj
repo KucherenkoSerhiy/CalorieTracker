@@ -4,7 +4,7 @@
         <TargetFramework>net7.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <UserSecretsId>aspnet-CaloryCalculator.Api-0A739CE4-3A52-4E2A-9C99-360FFA39FFD1</UserSecretsId>
+        <UserSecretsId>aspnet-CalorieCalculator.Api-0A739CE4-3A52-4E2A-9C99-360FFA39FFD1</UserSecretsId>
         <RootNamespace>CaloryCalculator.Api</RootNamespace>
     </PropertyGroup>
 

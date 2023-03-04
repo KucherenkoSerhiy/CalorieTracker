@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace CaloryCalculator.Api.Controllers;
+namespace CalorieCalculator.Api.Controllers;
 
 [ApiController]
 [Route("[controller]")]
