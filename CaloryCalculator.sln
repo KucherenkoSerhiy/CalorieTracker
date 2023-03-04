@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaloryCalculator.Api", "CaloryCalculator.Api\CaloryCalculator.Api.csproj", "{AAAA02DA-6DB8-47CB-B52C-683A95526DEF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieCalculator.Api", "CalorieCalculator.Api\CalorieCalculator.Api.csproj", "{AAAA02DA-6DB8-47CB-B52C-683A95526DEF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaloryCalculator.Application", "CaloryCalculator.Application\CaloryCalculator.Application.csproj", "{E6D00FCD-725D-483A-B2B7-237F01920703}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalorieCalculator.Application", "CalorieCalculator.Application\CalorieCalculator.Application.csproj", "{E6D00FCD-725D-483A-B2B7-237F01920703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
