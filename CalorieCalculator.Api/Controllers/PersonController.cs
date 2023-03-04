@@ -1,5 +1,7 @@
 ﻿using CalorieCalculator.Application.Models;
 using CalorieCalculator.Application.Services;
+using CalorieCalculator.Application.Services.DayService;
+using CalorieCalculator.Application.Services.PersonService;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CalorieCalculator.Api.Controllers;
