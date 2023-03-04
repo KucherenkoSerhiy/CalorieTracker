@@ -17,6 +17,7 @@ public class PersonController : ControllerBase
     }
 
     [HttpGet("last-7-days")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult<Person>> GetLast7Days()
     {
         var person = await personService.GetPersonAsync();
@@ -25,6 +26,7 @@ public class PersonController : ControllerBase
     }
 
     [HttpGet("last-30-days")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult<Person>> GetLast30Days()
     {
         var person = await personService.GetPersonAsync();
@@ -33,6 +35,7 @@ public class PersonController : ControllerBase
     }
 
     [HttpGet("month")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public async Task<ActionResult<Person>> GetMonth(DateTime month)
     {
         var person = await personService.GetPersonAsync();
