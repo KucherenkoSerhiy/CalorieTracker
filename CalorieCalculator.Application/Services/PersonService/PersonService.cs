@@ -1,4 +1,5 @@
 ﻿using CalorieCalculator.Application.Models;
+using CalorieCalculator.Application.Repositories;
 
 namespace CalorieCalculator.Application.Services.PersonService;
 
