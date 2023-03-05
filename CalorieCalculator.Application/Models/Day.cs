@@ -8,5 +8,25 @@
         public double TotalCaloriesBurned { get; set; }
         public List<Product> Consumed { get; set; } = new();
         public List<Exercise> Performed { get; set; } = new();
+
+        public void AddExercise(Exercise exercise)
+        {
+            TotalCaloriesBurned += exercise.CaloriesPerHour * exercise.Duration.TotalHours;
+            var existingExercise = Performed.FirstOrDefault(e => e.Name == exercise.Name);
+            if (existingExercise != null)
+            {
+                existingExercise.Duration += exercise.Duration;
+            }
+            else
+            {
+                Performed.Add(exercise);
+            }
+        }
+
+        public void AddConsumedProduct(Product product)
+        {
+            TotalCaloriesConsumed += product.Calories;
+            Consumed.Add(product);
+        }
     }
 }
