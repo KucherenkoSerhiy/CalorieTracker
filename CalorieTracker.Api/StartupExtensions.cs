@@ -12,7 +12,6 @@ namespace CalorieTracker.Api
     {
         public static void RegisterServices(this WebApplicationBuilder builder)
         {
-            builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -23,7 +22,7 @@ namespace CalorieTracker.Api
             builder.Services.AddScoped<IPersonRepository, PersonRepository>();
         }
     
-        public static void RegisterMiddleware(this WebApplication app)
+        public static void Configure(this WebApplication app)
         {
             if (app.Environment.IsDevelopment())
             {
