@@ -22,14 +22,14 @@ public class DayService : IDayService
         return day;
     }
 
-    public async Task<IReadOnlyCollection<Day>> GetLastNDays(int n)
+    public async Task<List<Day>> GetLastNDays(int n)
     {
         var endDate = DateTime.Today.AddDays(1);
         var startDate = endDate.AddDays(-n);
         return await dayRepository.GetDaysAsync(startDate, endDate);
     }
 
-    public async Task<IReadOnlyCollection<Day>> GetMonth(DateTime month)
+    public async Task<List<Day>> GetMonth(DateTime month)
     {
         var startDate = new DateTime(month.Year, month.Month, 1);
         var endDate = startDate.AddMonths(1);
