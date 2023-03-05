@@ -1,4 +1,4 @@
-﻿using CalorieTracker.Api;
+using CalorieTracker.Api;
 using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
