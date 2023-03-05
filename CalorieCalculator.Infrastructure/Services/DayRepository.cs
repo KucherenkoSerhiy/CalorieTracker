@@ -17,7 +17,7 @@ public class DayRepository : IDayRepository
     public async Task<Day?> GetDayAsync(DateTime date)
     {
         return await dataContext.Days
-            .Include(d => d.Consumed)
+            .Include(d => d.ConsumedProducts)
             .Include(d => d.Performed)
             .FirstOrDefaultAsync(d => d.Date == date);
     }
@@ -25,7 +25,7 @@ public class DayRepository : IDayRepository
     public async Task<List<Day>> GetDaysAsync(DateTime startDate, DateTime endDate)
     {
         return await dataContext.Days
-            .Include(d => d.Consumed)
+            .Include(d => d.ConsumedProducts)
             .Include(d => d.Performed)
             .Where(d => d.Date >= startDate && d.Date < endDate).ToListAsync();
     }

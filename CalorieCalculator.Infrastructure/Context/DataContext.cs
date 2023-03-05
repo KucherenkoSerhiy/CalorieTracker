@@ -45,7 +45,7 @@ public class DataContext : DbContext
             day.Property(d => d.TotalCaloriesBurned)
                 .IsRequired();
 
-            day.HasMany(d => d.Consumed)
+            day.HasMany(d => d.ConsumedProducts)
                 .WithOne()
                 .OnDelete(DeleteBehavior.Cascade);
 
