@@ -8,8 +8,4 @@
         <RootNamespace>CalorieTracker.Application</RootNamespace>
     </PropertyGroup>
 
-    <ItemGroup>
-      <Folder Include="CommandHandlers" />
-    </ItemGroup>
-
 </Project>
