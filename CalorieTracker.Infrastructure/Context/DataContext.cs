@@ -10,6 +10,9 @@ namespace CalorieTracker.Infrastructure.Context
         public DbSet<Product> Products { get; set; }
         public DbSet<Exercise> Exercises { get; set; }
 
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+            => options.UseSqlite("Data Source=database.db");
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Configure the Person entity
