@@ -2,6 +2,7 @@
 {
     public class Day
     {
+        public Guid Id { get; } = Guid.NewGuid();
         public DateTime Date { get; set; }
         public double TotalCaloriesConsumed { get; set; }
         public double TotalCaloriesBurned { get; set; }
