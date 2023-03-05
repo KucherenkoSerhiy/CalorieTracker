@@ -1,9 +1,6 @@
-﻿using System;
-using System.Threading.Tasks;
-using CalorieTracker.Application.Models;
+﻿using CalorieTracker.Application.Models;
 using CalorieTracker.Application.Services.DayService;
 using CalorieTracker.Application.Services.PersonService;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CalorieTracker.Api.Controllers

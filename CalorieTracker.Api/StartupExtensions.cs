@@ -2,9 +2,6 @@
 using CalorieTracker.Application.Services.DayService;
 using CalorieTracker.Application.Services.PersonService;
 using CalorieTracker.Infrastructure.Services;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 namespace CalorieTracker.Api
 {
