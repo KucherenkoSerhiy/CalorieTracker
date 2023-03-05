@@ -1,7 +1,9 @@
 ﻿using CalorieTracker.Application.Repositories;
 using CalorieTracker.Application.Services.DayService;
 using CalorieTracker.Application.Services.PersonService;
+using CalorieTracker.Infrastructure.Context;
 using CalorieTracker.Infrastructure.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace CalorieTracker.Api
 {
@@ -9,6 +11,10 @@ namespace CalorieTracker.Api
     {
         public static void RegisterServices(this WebApplicationBuilder builder)
         {
+            builder.Services.AddControllers();
+            builder.Services.AddDbContext<DataContext>(options =>
+                options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+            
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -28,8 +34,6 @@ namespace CalorieTracker.Api
             }
 
             app.UseHttpsRedirection();
-
-            app.UseAuthorization();
 
             app.MapControllers();
         }

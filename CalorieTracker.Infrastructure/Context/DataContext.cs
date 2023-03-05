@@ -9,6 +9,8 @@ namespace CalorieTracker.Infrastructure.Context
         public DbSet<Day> Days { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Exercise> Exercises { get; set; }
+        
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
             => options.UseSqlite("Data Source=database.db");
