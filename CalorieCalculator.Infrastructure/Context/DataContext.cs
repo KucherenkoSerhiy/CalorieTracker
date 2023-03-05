@@ -49,7 +49,7 @@ public class DataContext : DbContext
                 .WithOne()
                 .OnDelete(DeleteBehavior.Cascade);
 
-            day.HasMany(d => d.Performed)
+            day.HasMany(d => d.PerformedExercises)
                 .WithOne()
                 .OnDelete(DeleteBehavior.Cascade);
         });
